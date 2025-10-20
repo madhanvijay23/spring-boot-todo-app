@@ -16,6 +16,11 @@ public class TodoController {
 
     @Autowired
     private TodoService todoService;
+     @GetMapping("/")
+    public ResponseEntity<String> root() {
+        return ResponseEntity.ok("Welcome to TodoApp API! Use /api/todos to access todos.");
+    }
+
 
     // GET all todos - http://localhost:8080/api/todos
     @GetMapping
