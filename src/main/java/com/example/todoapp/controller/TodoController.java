@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/todos")
-@CrossOrigin(origins = "*") // Allows frontend to access this API
+@CrossOrigin(origins = "https://maddy-todo.netlify.app/") // Allows frontend to access this API
 public class TodoController {
 
     @Autowired
